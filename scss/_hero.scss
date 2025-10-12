@@ -1,0 +1,13 @@
+@use 'variables';
+
+section.hero{
+  color: variables.$color-gold;
+ 
+  @media (min-width: 768px){
+       
+  }
+  @media (min-width: 1024px){
+       
+  }
+  
+}

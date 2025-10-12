@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+
+div.page {
+  width: 100%;
+  max-width: 1800px;
+  min-height: 100vh;
+}
+
+section.hero {
+  color: #D5966C;
+}
+footer {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+footer p {
+  font-family: sans-serif;
+  font-weight: 150;
+}
+footer.footer {
+  background-color: #151515;
+  color: #FFFFFF;
+}
