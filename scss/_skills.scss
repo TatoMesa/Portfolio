@@ -1,0 +1,29 @@
+@use 'variables';
+
+section.skills{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 25px;
+    background-image: url('../img/icon/Group\ 26\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right bottom;
+    padding-bottom: 11%;
+    article.skill{
+        h3{
+            font-size: 25px;
+            text-align: center;
+            line-height: 1.1;
+            padding-bottom: 3%;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    hr{
+        width: 90%;
+        margin-top: 3%;
+    }
+}

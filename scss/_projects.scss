@@ -1,0 +1,58 @@
+@use 'variables';
+
+section.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+
+    a{
+        color: variables.$color-white;
+        text-decoration: underline;
+        text-decoration-color: variables.$color-green;
+        text-underline-offset: 12px;
+        text-decoration-thickness: 2px;
+        &:hover{
+            color: variables.$color-green;
+        }
+        
+    }
+
+    div.hero-projects{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5%;
+        h2{
+            color: variables.$color-white;
+        }
+        
+    }
+
+    article.project{
+        padding-bottom: 10%;
+        img{
+            width: 340px;
+            height: 200px;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            padding-bottom: 5%;
+            padding-top: 3%;
+        }
+        span{
+            margin-bottom: 15%;
+            padding-right: 10%;
+        }  
+        a:nth-child(even) {
+            padding-right: 10%;
+        }
+    }
+
+
+
+
+}

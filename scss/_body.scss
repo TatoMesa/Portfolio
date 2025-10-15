@@ -1,19 +1,17 @@
 @use 'variables';
-body {
-  margin: 0;
-  background-color: variables.$color-white; 
-  font-family: sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
+
+body{
+  color: variables.$color-white;
+  background-color: variables.$color-black;
+  font-family: variables.$font-family;
+  width: 100%;
+  max-width: 1800px;
 }
 
 div.page{
-  width: 100%;
+  width: 90%;
   max-width: 1800px;
-  min-height: 100vh;
-  
+    
 }
 
 

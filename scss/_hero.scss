@@ -1,8 +1,22 @@
 @use 'variables';
 
 section.hero{
-  color: variables.$color-gold;
- 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: 
+    url('../img/icon/Group\ 26.svg'),
+    url('../img/icon/Oval.svg'),
+    url('../img/img/SebastianMesa.jpg');
+  background-repeat: no-repeat, no-repeat, no-repeat; 
+  background-position: left, top right, top;
+  background-size: 55%, 15%, 65% ;
+  padding-top: 110%;
+  justify-content: center;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
   @media (min-width: 768px){
        
   }
@@ -10,4 +24,32 @@ section.hero{
        
   }
   
+  h1{
+    font-family: variables.$font-family;
+    font-size: 35px;
+    padding-bottom: 5%;
+    line-height: 1.1;
+    span{
+      text-decoration: underline;
+      text-decoration-color: variables.$color-green;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 3px;
+    }
+  }
+  p{
+    
+    line-height: 1.6;
+    padding-bottom: 5%;
+  }
+  a{
+    color: variables.$color-white;
+    text-decoration: underline;
+    text-decoration-color: variables.$color-green;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+    padding-bottom: 20%;
+    &:hover{
+      color: variables.$color-green;
+    }
+  }
 }

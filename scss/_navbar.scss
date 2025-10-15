@@ -1,0 +1,14 @@
+@use 'variables';
+nav{
+    text-align: center;
+    padding: 5%;
+    p.name{
+        font-family: variables.$font-name;
+        font-size: 25px;
+    }
+    div.icons{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
