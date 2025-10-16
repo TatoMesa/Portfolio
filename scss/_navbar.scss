@@ -11,4 +11,14 @@ nav{
         justify-content: center;
         gap: 15px;
     }
+    @media (min-width: 768px){
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+
+    }
+    @media (min-width: 1024px){
+       padding-left: 15%;
+       padding-right: 15%;
+    }
 }

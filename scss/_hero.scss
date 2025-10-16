@@ -9,16 +9,19 @@ section.hero{
     url('../img/icon/Oval.svg'),
     url('../img/img/SebastianMesa.jpg');
   background-repeat: no-repeat, no-repeat, no-repeat; 
-  background-position: left, top right, top;
-  background-size: 55%, 15%, 65% ;
-  padding-top: 110%;
+  background-position: -60% 5%, 100% 45%, top;
+  background-size: 65%, 15%, 65% ;
+  
   justify-content: center;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
   @media (min-width: 768px){
-       
+    padding-top: 10%;
+    background-size: 55%, 10%, 45% ;
+    background-position: -60% 0%, 100% 82%, 100% 0%;
+    text-align: left;
   }
   @media (min-width: 1024px){
        
@@ -26,9 +29,18 @@ section.hero{
   
   h1{
     font-family: variables.$font-family;
-    font-size: 35px;
+    font-size: 2.2rem;
     padding-bottom: 5%;
+    padding-top: 120%;
     line-height: 1.1;
+    @media (min-width: 768px){
+      font-size: 4rem;
+      width: 55%;
+      padding-top: 0%;
+    }
+    @media (min-width: 1024px){
+       
+    }
     span{
       text-decoration: underline;
       text-decoration-color: variables.$color-green;
@@ -40,6 +52,13 @@ section.hero{
     
     line-height: 1.6;
     padding-bottom: 5%;
+    @media (min-width: 768px){
+      font-size: 1rem;
+      width: 55%;
+    }
+    @media (min-width: 1024px){
+       
+    }
   }
   a{
     color: variables.$color-white;
@@ -47,7 +66,7 @@ section.hero{
     text-decoration-color: variables.$color-green;
     text-underline-offset: 15px;
     text-decoration-thickness: 2px;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
     &:hover{
       color: variables.$color-green;
     }

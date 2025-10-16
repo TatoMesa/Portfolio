@@ -34,6 +34,19 @@ nav div.icons {
   justify-content: center;
   gap: 15px;
 }
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
 
 section.hero {
   display: flex;
@@ -41,20 +54,35 @@ section.hero {
   width: 100%;
   background-image: url("../img/icon/Group 26.svg"), url("../img/icon/Oval.svg"), url("../img/img/SebastianMesa.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left, top right, top;
-  background-size: 55%, 15%, 65%;
-  padding-top: 110%;
+  background-position: -60% 5%, 100% 45%, top;
+  background-size: 65%, 15%, 65%;
   justify-content: center;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
 }
+@media (min-width: 768px) {
+  section.hero {
+    padding-top: 10%;
+    background-size: 55%, 10%, 45%;
+    background-position: -60% 0%, 100% 82%, 100% 0%;
+    text-align: left;
+  }
+}
 section.hero h1 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 35px;
+  font-size: 2.2rem;
   padding-bottom: 5%;
+  padding-top: 120%;
   line-height: 1.1;
+}
+@media (min-width: 768px) {
+  section.hero h1 {
+    font-size: 4rem;
+    width: 55%;
+    padding-top: 0%;
+  }
 }
 section.hero h1 span {
   text-decoration: underline;
@@ -66,13 +94,19 @@ section.hero p {
   line-height: 1.6;
   padding-bottom: 5%;
 }
+@media (min-width: 768px) {
+  section.hero p {
+    font-size: 1rem;
+    width: 55%;
+  }
+}
 section.hero a {
   color: #ffffff;
   text-decoration: underline;
   text-decoration-color: #4EE1A0;
   text-underline-offset: 15px;
   text-decoration-thickness: 2px;
-  padding-bottom: 20%;
+  padding-bottom: 15%;
 }
 section.hero a:hover {
   color: #4EE1A0;
@@ -81,7 +115,6 @@ section.hero a:hover {
 section.skills {
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
   justify-items: center;
   gap: 25px;
   background-image: url("../img/icon/Group 26 (1).svg");
@@ -90,26 +123,59 @@ section.skills {
   background-position: right bottom;
   padding-bottom: 11%;
 }
+@media (min-width: 768px) {
+  section.skills {
+    grid-template-columns: 1fr 1fr;
+    background-size: 40%;
+    background-position: 120% 100%;
+    justify-items: start;
+    padding-left: 5%;
+  }
+}
 section.skills article.skill h3 {
-  font-size: 25px;
+  font-size: 1.8rem;
   text-align: center;
   line-height: 1.1;
   padding-bottom: 3%;
 }
+@media (min-width: 768px) {
+  section.skills article.skill h3 {
+    text-align: left;
+    font-size: 2.3rem;
+  }
+}
 section.skills article.skill p {
   text-align: center;
+}
+@media (min-width: 768px) {
+  section.skills article.skill p {
+    text-align: left;
+  }
 }
 section.skills hr {
   width: 90%;
   margin-top: 3%;
 }
+@media (min-width: 768px) {
+  section.skills hr {
+    display: none;
+  }
+}
 
-section.projects {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  justify-content: center;
-  justify-items: center;
+section.projects div.hero-projects {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+section.projects div.hero-projects h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  section.projects div.hero-projects h2 {
+    font-size: 4rem;
+  }
 }
 section.projects a {
   color: #ffffff;
@@ -121,34 +187,37 @@ section.projects a {
 section.projects a:hover {
   color: #4EE1A0;
 }
-section.projects div.hero-projects {
-  display: flex;
-  justify-content: space-between;
+section.projects div.body-projects {
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
-  padding: 5%;
+  justify-content: center;
+  justify-items: center;
 }
-section.projects div.hero-projects h2 {
-  color: #ffffff;
+@media (min-width: 768px) {
+  section.projects div.body-projects {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-section.projects article.project {
+section.projects div.body-projects article.project {
   padding-bottom: 10%;
 }
-section.projects article.project img {
+section.projects div.body-projects article.project img {
   width: 340px;
   height: 200px;
 }
-section.projects article.project h3 {
+section.projects div.body-projects article.project h3 {
   font-size: 1.5rem;
 }
-section.projects article.project p {
+section.projects div.body-projects article.project p {
   padding-bottom: 5%;
   padding-top: 3%;
 }
-section.projects article.project span {
+section.projects div.body-projects article.project span {
   margin-bottom: 15%;
   padding-right: 10%;
 }
-section.projects article.project a:nth-child(even) {
+section.projects div.body-projects article.project a:nth-child(even) {
   padding-right: 10%;
 }
 
@@ -157,20 +226,41 @@ section.form {
   grid-template-columns: 1fr;
   width: 100%;
   padding: 5%;
+  justify-content: center;
   background-color: #242424;
   background-image: url("../img/icon/Group 26 (2).svg");
   background-repeat: no-repeat;
-  background-position: -100% 83%;
-  padding-bottom: 20%;
+  background-position: -180% 83%;
+  padding-bottom: 15%;
+}
+@media (min-width: 768px) {
+  section.form {
+    background-position: -35% 95%;
+  }
 }
 section.form h2 {
   font-size: 1.8rem;
   padding: 5% 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  section.form h2 {
+    font-size: 4rem;
+  }
 }
 section.form p {
   font-size: 0.9rem;
   padding: 0 0 15% 0;
   text-align: center;
+}
+@media (min-width: 768px) {
+  section.form p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
 }
 section.form div.form-group {
   display: flex;
@@ -178,7 +268,16 @@ section.form div.form-group {
   margin-bottom: 1.5rem;
   width: 100%;
 }
+@media (min-width: 768px) {
+  section.form div.form-group {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+  }
+}
 section.form div.form-group label {
+  padding-left: 5%;
   font-size: 0.8rem;
   letter-spacing: 1px;
   color: #D9D9D9;
@@ -200,6 +299,14 @@ section.form div.form-group textarea:focus {
 section.form div.form-submit {
   display: flex;
   justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  section.form div.form-submit {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+  }
 }
 section.form div.form-submit button {
   background: none;
