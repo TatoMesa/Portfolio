@@ -1,7 +1,7 @@
 @use 'variables';
 nav{
     text-align: center;
-    padding: 5%;
+    padding: 3% 5%;
     p.name{
         font-family: variables.$font-name;
         font-size: 25px;
@@ -15,10 +15,10 @@ nav{
        display: flex;
        flex-direction: row;
        justify-content: space-between;
-
+    
     }
     @media (min-width: 1024px){
-       padding-left: 15%;
-       padding-right: 15%;
+        width: 100%;
+        padding: 3% 10%;
     }
 }

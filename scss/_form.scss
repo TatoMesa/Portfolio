@@ -13,8 +13,13 @@ section.form{
   padding-bottom: 15%;
  
   @media (min-width: 768px){
-      background-position: -35% 95%;
-    }  
+    background-position: -35% 95%;
+  }  
+  @media (min-width: 1024px){
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
+    background-position: 0% 83%;
+  }  
   
   h2{
     font-size: 1.8rem;
@@ -22,6 +27,11 @@ section.form{
     text-align: center;
     @media (min-width: 768px){
       font-size: 4rem;
+      padding-top: 0;
+    }
+    @media (min-width: 1024px){
+      text-align: left;
+      margin-left: 10%;
     }
   }
   p{
@@ -34,6 +44,10 @@ section.form{
       margin-right: auto;
       font-size: 1.1rem;
       line-height: 1.5;
+    }
+    @media (min-width: 1024px){
+      margin: 10%;
+      text-align: left;
     }
   }
   div.form-group {
@@ -63,11 +77,38 @@ section.form{
       color: variables.$color-white;
       font-size: 1rem;
       outline: none;
+      transition: border-color 0.3s ease;
+      &:required:invalid {
+        border-bottom-color: variables.$color-red;
+      }
+      &:valid {
+        border-bottom-color: variables.$color-green;
+      }
     }
 
     input:focus,
     textarea:focus {
       border-bottom-color: variables.$color-green;
+    }
+
+    .error-message {
+      display: none;
+      font-size: 0.8rem;
+      color: variables.$color-red;
+      margin-top: 0.4rem;
+      padding-left: 5%;
+      text-align: right;
+    }
+
+  // Muestra el mensaje solo si el input es inválido
+    input:invalid + .error-message,
+    textarea:invalid + .error-message {
+      display: block;
+    }
+
+    input:valid + .error-message,
+    textarea:valid + .error-message {
+      display: none;
     }
   }
   div.form-submit {
@@ -78,6 +119,7 @@ section.form{
       margin-left: auto;
       margin-right: auto;
       font-size: 1.1rem;
+    
     }
     button {
       background: none;

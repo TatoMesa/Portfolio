@@ -5,7 +5,7 @@ section.skills{
     grid-template-columns: 1fr;
     
     justify-items: center;
-    gap: 25px;
+    gap: 2%;
     background-image: url('../img/icon/Group\ 26\ \(1\).svg');
     background-repeat: no-repeat;
     background-size: 50%;
@@ -19,7 +19,13 @@ section.skills{
       padding-left: 5%;
     }
     @media (min-width: 1024px){
-       
+        width: 90%;
+        padding-left: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-size: 40%;
+        background-position: 110% 100%;
     }
     article.skill{
         h3{
@@ -31,11 +37,18 @@ section.skills{
                 text-align: left;
                 font-size: 2.3rem;
             }
+            @media (min-width: 1024px){
+                text-align: left;
+                font-size: 3rem;
+            }
         }
         p{
             text-align: center;
             @media (min-width: 768px){
                 text-align: left;
+            }
+            @media (min-width: 1024px){
+                margin-bottom: 15%;
             }
         }
     }

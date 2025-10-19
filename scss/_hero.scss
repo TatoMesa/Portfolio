@@ -24,8 +24,18 @@ section.hero{
     text-align: left;
   }
   @media (min-width: 1024px){
-       
-  }
+    background-image: 
+    url('../img/icon/Group\ 26.svg'),
+    url('../img/icon/Oval1.svg'),
+    url('../img/img/SebastianMesa.jpg');
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-size: 65%, 8%, 30% ;
+    background-position: -80% 0%, 60% 65%, 85% 0%;
+    text-align: left;
+  }  
+  
   
   h1{
     font-family: variables.$font-family;
@@ -39,7 +49,7 @@ section.hero{
       padding-top: 0%;
     }
     @media (min-width: 1024px){
-       
+       font-size: 5rem;
     }
     span{
       text-decoration: underline;
@@ -57,7 +67,8 @@ section.hero{
       width: 55%;
     }
     @media (min-width: 1024px){
-       
+      font-size: 1.5rem;
+      width: 40%;
     }
   }
   a{
@@ -69,6 +80,10 @@ section.hero{
     padding-bottom: 15%;
     &:hover{
       color: variables.$color-green;
+    }
+    @media (min-width: 1024px){
+      font-size: 1.5rem;
+      padding-bottom: 10%;    
     }
   }
 }

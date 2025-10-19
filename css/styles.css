@@ -3,12 +3,8 @@ body {
   background-color: #151515;
   font-family: "Space Grotesk", sans-serif;
   width: 100%;
-  max-width: 1800px;
-}
-
-div.page {
-  width: 90%;
-  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 * {
@@ -23,7 +19,7 @@ a {
 
 nav {
   text-align: center;
-  padding: 5%;
+  padding: 3% 5%;
 }
 nav p.name {
   font-family: "Poppins", sans-serif;
@@ -43,8 +39,8 @@ nav div.icons {
 }
 @media (min-width: 1024px) {
   nav {
-    padding-left: 15%;
-    padding-right: 15%;
+    width: 100%;
+    padding: 3% 10%;
   }
 }
 
@@ -70,6 +66,17 @@ section.hero {
     text-align: left;
   }
 }
+@media (min-width: 1024px) {
+  section.hero {
+    background-image: url("../img/icon/Group 26.svg"), url("../img/icon/Oval1.svg"), url("../img/img/SebastianMesa.jpg");
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-size: 65%, 8%, 30%;
+    background-position: -80% 0%, 60% 65%, 85% 0%;
+    text-align: left;
+  }
+}
 section.hero h1 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 2.2rem;
@@ -82,6 +89,11 @@ section.hero h1 {
     font-size: 4rem;
     width: 55%;
     padding-top: 0%;
+  }
+}
+@media (min-width: 1024px) {
+  section.hero h1 {
+    font-size: 5rem;
   }
 }
 section.hero h1 span {
@@ -100,6 +112,12 @@ section.hero p {
     width: 55%;
   }
 }
+@media (min-width: 1024px) {
+  section.hero p {
+    font-size: 1.5rem;
+    width: 40%;
+  }
+}
 section.hero a {
   color: #ffffff;
   text-decoration: underline;
@@ -111,12 +129,18 @@ section.hero a {
 section.hero a:hover {
   color: #4EE1A0;
 }
+@media (min-width: 1024px) {
+  section.hero a {
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+  }
+}
 
 section.skills {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  gap: 25px;
+  gap: 2%;
   background-image: url("../img/icon/Group 26 (1).svg");
   background-repeat: no-repeat;
   background-size: 50%;
@@ -132,6 +156,17 @@ section.skills {
     padding-left: 5%;
   }
 }
+@media (min-width: 1024px) {
+  section.skills {
+    width: 90%;
+    padding-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-size: 40%;
+    background-position: 110% 100%;
+  }
+}
 section.skills article.skill h3 {
   font-size: 1.8rem;
   text-align: center;
@@ -144,12 +179,23 @@ section.skills article.skill h3 {
     font-size: 2.3rem;
   }
 }
+@media (min-width: 1024px) {
+  section.skills article.skill h3 {
+    text-align: left;
+    font-size: 3rem;
+  }
+}
 section.skills article.skill p {
   text-align: center;
 }
 @media (min-width: 768px) {
   section.skills article.skill p {
     text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  section.skills article.skill p {
+    margin-bottom: 15%;
   }
 }
 section.skills hr {
@@ -162,20 +208,11 @@ section.skills hr {
   }
 }
 
-section.projects div.hero-projects {
+section.projects {
   display: flex;
-  padding: 5%;
-  justify-content: space-between;
-  align-items: center;
-}
-section.projects div.hero-projects h2 {
-  font-size: 2rem;
-  color: #ffffff;
-}
-@media (min-width: 768px) {
-  section.projects div.hero-projects h2 {
-    font-size: 4rem;
-  }
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 section.projects a {
   color: #ffffff;
@@ -187,38 +224,105 @@ section.projects a {
 section.projects a:hover {
   color: #4EE1A0;
 }
+section.projects div.hero-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2%;
+}
+section.projects div.hero-projects h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  section.projects div.hero-projects h2 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  section.projects div.hero-projects h2 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  section.projects div.hero-projects {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 section.projects div.body-projects {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  justify-content: center;
   justify-items: center;
 }
 @media (min-width: 768px) {
   section.projects div.body-projects {
     grid-template-columns: 1fr 1fr;
+    column-gap: 3%;
+  }
+}
+@media (min-width: 1024px) {
+  section.projects div.body-projects {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 5%;
   }
 }
 section.projects div.body-projects article.project {
-  padding-bottom: 10%;
+  position: relative;
 }
 section.projects div.body-projects article.project img {
-  width: 340px;
-  height: 200px;
+  width: 100%;
+  aspect-ratio: 1.8;
 }
 section.projects div.body-projects article.project h3 {
-  font-size: 1.5rem;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 1%;
 }
 section.projects div.body-projects article.project p {
+  margin-bottom: 3%;
+}
+section.projects div.body-projects article.project p span {
   padding-bottom: 5%;
-  padding-top: 3%;
+  padding-right: 5%;
+  font-size: 0.9rem;
+  color: #ffffff;
 }
-section.projects div.body-projects article.project span {
-  margin-bottom: 15%;
-  padding-right: 10%;
+section.projects div.body-projects article.project div.overlay {
+  margin-bottom: 5%;
 }
-section.projects div.body-projects article.project a:nth-child(even) {
-  padding-right: 10%;
+section.projects div.body-projects article.project div.overlay a {
+  padding-right: 3%;
+}
+@media (min-width: 1024px) {
+  section.projects div.body-projects article.project div.overlay a {
+    padding-bottom: 4%;
+  }
+}
+@media (min-width: 1024px) {
+  section.projects div.body-projects article.project div.overlay {
+    position: absolute;
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+}
+@media (min-width: 1024px) {
+  section.projects div.body-projects article.project:hover img {
+    opacity: 0.2;
+  }
+  section.projects div.body-projects article.project:hover div.overlay {
+    opacity: 1;
+  }
 }
 
 section.form {
@@ -238,6 +342,13 @@ section.form {
     background-position: -35% 95%;
   }
 }
+@media (min-width: 1024px) {
+  section.form {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
+    background-position: 0% 83%;
+  }
+}
 section.form h2 {
   font-size: 1.8rem;
   padding: 5% 0;
@@ -246,6 +357,13 @@ section.form h2 {
 @media (min-width: 768px) {
   section.form h2 {
     font-size: 4rem;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  section.form h2 {
+    text-align: left;
+    margin-left: 10%;
   }
 }
 section.form p {
@@ -260,6 +378,12 @@ section.form p {
     margin-right: auto;
     font-size: 1.1rem;
     line-height: 1.5;
+  }
+}
+@media (min-width: 1024px) {
+  section.form p {
+    margin: 10%;
+    text-align: left;
   }
 }
 section.form div.form-group {
@@ -291,10 +415,35 @@ section.form div.form-group textarea {
   color: #ffffff;
   font-size: 1rem;
   outline: none;
+  transition: border-color 0.3s ease;
+}
+section.form div.form-group input:required:invalid,
+section.form div.form-group textarea:required:invalid {
+  border-bottom-color: #FF6F5B;
+}
+section.form div.form-group input:valid,
+section.form div.form-group textarea:valid {
+  border-bottom-color: #4EE1A0;
 }
 section.form div.form-group input:focus,
 section.form div.form-group textarea:focus {
   border-bottom-color: #4EE1A0;
+}
+section.form div.form-group .error-message {
+  display: none;
+  font-size: 0.8rem;
+  color: #FF6F5B;
+  margin-top: 0.4rem;
+  padding-left: 5%;
+  text-align: right;
+}
+section.form div.form-group input:invalid + .error-message,
+section.form div.form-group textarea:invalid + .error-message {
+  display: block;
+}
+section.form div.form-group input:valid + .error-message,
+section.form div.form-group textarea:valid + .error-message {
+  display: none;
 }
 section.form div.form-submit {
   display: flex;
