@@ -43,6 +43,18 @@ nav div.icons {
     padding: 3% 10%;
   }
 }
+nav .github:hover {
+  content: url("../img/icon/akar-icons_github-fill_green.svg");
+}
+nav .shape:hover {
+  content: url("../img/icon/Shape_green.svg");
+}
+nav .twiter:hover {
+  content: url("../img/icon/akar-icons_twitter-fill_green.svg");
+}
+nav .linkedin:hover {
+  content: url("../img/icon/LinkedIn_green.svg");
+}
 
 section.hero {
   display: flex;
