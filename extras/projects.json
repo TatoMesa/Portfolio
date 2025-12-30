@@ -1,74 +1,74 @@
 [
-     {
-    "title": "Índice de Ejercicios realizados en ReactJS estilados con Tailwind",
-    "image": "./img/img/React-ejercicios-js.png",
-    "alt": "Ejercicios JS React",
-    "tech": ["HTML", "REACTJS", "TAILWINDCSS"],
-    "demo": "https://tatomesa.github.io/react-ejercicios-js/",
-    "code": "https://github.com/TatoMesa/react-ejercicios-js"
-  },
-  {
-    "title": "Ejercicios JS",
-    "image": "./img/img/Ejercicios-JS.png",
-    "alt": "Ejercicios JS",
-    "tech": ["HTML", "CSS", "JS"],
-    "demo": "https://tatomesa.github.io/EjerciciosJS/",
-    "code": "https://github.com/TatoMesa/EjerciciosJS"
-  },
-  {
-    "title": "Rick & Morty Explorer",
-    "image": "./img/img/Rick-Morty-Explorer.png",
-    "alt": "Rick Morty",
-    "tech": ["HTML", "CSS", "JS"],
-    "demo": "https://tatomesa.github.io/Rick-Morty/",
-    "code": "https://github.com/TatoMesa/Rick-Morty"
-  },
-  {
-    "title": "Academia Conquers",
-    "image": "./img/img/Academia-Conquer.png",
-    "alt": "Academia Conquers",
-    "tech": ["HTML", "SCSS", "JS"],
-    "demo": "https://tatomesa.github.io/Conquers/",
-    "code": "https://github.com/TatoMesa/Conquers"
-  },
-  {
-    "title": "Modern Art Gallery",
-    "image": "./img/img/Modern Art Gallery.png",
-    "alt": "Modern Art Gallery",
-    "tech": ["HTML", "SCSS"],
-    "demo": "https://tatomesa.github.io/Modern-Art-Gallery/",
-    "code": "https://github.com/TatoMesa/Modern-Art-Gallery"
-  },
-  {
-    "title": "Gath Session",
-    "image": "./img/img/GathSession.png",
-    "alt": "Gath Session",
-    "tech": ["HTML", "SCSS"],
-    "demo": "https://tatomesa.github.io/Header-Gathsession/",
-    "code": "https://github.com/TatoMesa/Header-Gathsession"
-  },
-  {
-    "title": "Spa Beauty",
-    "image": "./img/img/Spa Beauty.png",
-    "alt": "Spa Beauty",
-    "tech": ["HTML", "SCSS"],
-    "demo": "https://tatomesa.github.io/Spa-Beauty/",
-    "code": "https://github.com/TatoMesa/Spa-Beauty"
-  },
-  {
-    "title": "Pet Shop",
-    "image": "./img/img/Pet Shop.png",
-    "alt": "Pet Shops",
-    "tech": ["HTML", "CSS"],
-    "demo": "https://tatomesa.github.io/pet-Shop/",
-    "code": "https://github.com/TatoMesa/pet-Shop"
-  },
-  {
-    "title": "Heroes",
-    "image": "./img/img/Heroes.png",
-    "alt": "Heroes",
-    "tech": ["HTML", "SCSS"],
-    "demo": "https://tatomesa.github.io/Super-Heroes/",
-    "code": "https://github.com/TatoMesa/Super-Heroes"
-  }
+    {
+        "title": "Índice de Ejercicios realizados en ReactJS estilados con Tailwind",
+        "image": "./img/img/React-ejercicios-js.png",
+        "alt": "Ejercicios JS React",
+        "tech": ["HTML", "REACTJS", "TAILWINDCSS"],
+        "demo": "https://tatomesa.github.io/react-ejercicios-js/",
+        "code": "https://github.com/TatoMesa/react-ejercicios-js"
+    },
+    {
+        "title": "Ejercicios JS",
+        "image": "./img/img/Ejercicios-JS.png",
+        "alt": "Ejercicios JS",
+        "tech": ["HTML", "CSS", "JS"],
+        "demo": "https://tatomesa.github.io/EjerciciosJS/",
+        "code": "https://github.com/TatoMesa/EjerciciosJS"
+    },
+    {
+        "title": "Rick & Morty Explorer",
+        "image": "./img/img/Rick-Morty-Explorer.png",
+        "alt": "Rick Morty",
+        "tech": ["HTML", "CSS", "JS"],
+        "demo": "https://tatomesa.github.io/Rick-Morty/",
+        "code": "https://github.com/TatoMesa/Rick-Morty"
+    },
+    {
+        "title": "Academia Conquers",
+        "image": "./img/img/Academia-Conquer.png",
+        "alt": "Academia Conquers",
+        "tech": ["HTML", "SCSS", "JS"],
+        "demo": "https://tatomesa.github.io/Conquers/",
+        "code": "https://github.com/TatoMesa/Conquers"
+    },
+    {
+        "title": "Modern Art Gallery",
+        "image": "./img/img/Modern Art Gallery.png",
+        "alt": "Modern Art Gallery",
+        "tech": ["HTML", "SCSS"],
+        "demo": "https://tatomesa.github.io/Modern-Art-Gallery/",
+        "code": "https://github.com/TatoMesa/Modern-Art-Gallery"
+    },
+    {
+        "title": "Gath Session",
+        "image": "./img/img/GathSession.png",
+        "alt": "Gath Session",
+        "tech": ["HTML", "SCSS"],
+        "demo": "https://tatomesa.github.io/Header-Gathsession/",
+        "code": "https://github.com/TatoMesa/Header-Gathsession"
+    },
+    {
+        "title": "Spa Beauty",
+        "image": "./img/img/Spa Beauty.png",
+        "alt": "Spa Beauty",
+        "tech": ["HTML", "SCSS"],
+        "demo": "https://tatomesa.github.io/Spa-Beauty/",
+        "code": "https://github.com/TatoMesa/Spa-Beauty"
+    },
+    {
+        "title": "Pet Shop",
+        "image": "./img/img/Pet Shop.png",
+        "alt": "Pet Shops",
+        "tech": ["HTML", "CSS"],
+        "demo": "https://tatomesa.github.io/pet-Shop/",
+        "code": "https://github.com/TatoMesa/pet-Shop"
+    },
+    {
+        "title": "Heroes",
+        "image": "./img/img/Heroes.png",
+        "alt": "Heroes",
+        "tech": ["HTML", "SCSS"],
+        "demo": "https://tatomesa.github.io/Super-Heroes/",
+        "code": "https://github.com/TatoMesa/Super-Heroes"
+    }
 ]

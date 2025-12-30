@@ -1,6 +1,6 @@
 const container = document.getElementById("projects-container");
 
-fetch("/extras/projects.json")
+fetch("extras/projects.json")
   .then(res => res.json())
   .then(projects => {
     container.innerHTML = projects.map(project => `
