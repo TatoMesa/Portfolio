@@ -1,5 +1,13 @@
 [
     {
+        "title": "Rick & Morty Explorer en ReactJS estilados con Tailwind",
+        "image": "./img/img/React-Rick-Morty.png",
+        "alt": "Rick Morty React",
+        "tech": ["HTML", "REACTJS", "TAILWINDCSS"],
+        "demo": "https://tatomesa.github.io/Rick-Morty-React-Tailwind/",
+        "code": "https://github.com/TatoMesa/Rick-Morty-React-Tailwind"
+    },
+    {
         "title": "Índice de Ejercicios realizados en ReactJS estilados con Tailwind",
         "image": "./img/img/React-ejercicios-js.png",
         "alt": "Ejercicios JS React",
