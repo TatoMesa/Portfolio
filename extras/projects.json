@@ -1,5 +1,21 @@
 [
     {
+        "title": "Administracion de complejo",
+        "image": "./img/img/Complejo.jpg",
+        "alt": "Administracion",
+        "tech": ["DJANGO", "JS", "TAILWINDCSS"],
+        "demo": "https://web-production-490a4.up.railway.app/accounts/login/?next=/",
+        "code": "https://github.com/TatoMesa/Administracion-de-complejo"
+    },
+    {
+        "title": "Red social",
+        "image": "./img/img/Red Social.jpg",
+        "alt": "Red Social",
+        "tech": ["DJANGO", "JS", "BOOTSTRAP 5"],
+        "demo": "https://redsocial-f0kx.onrender.com/",
+        "code": "https://github.com/TatoMesa/RedSocial"
+    },
+    {
         "title": "Rick & Morty Explorer en ReactJS estilados con Tailwind",
         "image": "./img/img/React-Rick-Morty.png",
         "alt": "Rick Morty React",
